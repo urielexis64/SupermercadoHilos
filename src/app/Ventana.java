@@ -39,10 +39,10 @@ public class Ventana extends JFrame {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		caja = Rutinas.AjustarImagen("caja.png", 80, 80).getImage();
-		cliente1 = Rutinas.AjustarImagen("persona.png", 50, 50).getImage();
-		cliente2 = Rutinas.AjustarImagen("persona2.png", 50, 50).getImage();
-		cliente3 = Rutinas.AjustarImagen("persona3.png", 50, 50).getImage();
+		caja = Rutinas.AjustarImagen("resources/caja.png", 80, 80).getImage();
+		cliente1 = Rutinas.AjustarImagen("resources/persona.png", 50, 50).getImage();
+		cliente2 = Rutinas.AjustarImagen("resources/persona2.png", 50, 50).getImage();
+		cliente3 = Rutinas.AjustarImagen("resources/persona3.png", 50, 50).getImage();
 
 		iniciado = false;
 
@@ -119,7 +119,7 @@ public class Ventana extends JFrame {
 
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);// Para un renderizado
 																								// más suave
-		g2.drawImage(Rutinas.AjustarImagen("fondo.jpg", 1000, 520).getImage(), 0, 0, null);
+		g2.drawImage(Rutinas.AjustarImagen("resources/fondo.jpg", 1000, 520).getImage(), 0, 0, null);
 		g2.setColor(new Color(0, 0, 0, 100));
 		g2.fillRect(0, 0, 1000, 520);
 
